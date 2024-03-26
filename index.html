@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="notes--menu">
+          <img
+            class="close--icon"
+            src="images/Vector (2).svg"
+            alt="close-icon"
+          />
+          <h2 class="header--title">Almdrasa-Notes</h2>
+          <form class="form">
+            <input class="search--input" type="text" placeholder="Search" />
+          </form>
+        </div>
+        <!-- <p class="no-search">no se</p> -->
+        <div class="note--add">
+          <p class="active note--page">Notes</p>
+          <p class="add--page">Add Note</p>
+        </div>
+        <button class="btn--header"></button>
+      </header>
+      <header class="notes">
+        <div class="notes--menu--main">
+          <div class="notes--menu">
+            <img class="menu" src="images/Menu 1.svg" alt="menu-icon" />
+            <h2 class="header--title--mobile">Almdrasa-Notes</h2>
+            <img class="search--icon menu" src="images/Frame (1).svg" alt="" />
+          </div>
+          <form class="form--mobile form-mobile--none">
+            <input
+              class="search--input--mobile"
+              type="text"
+              placeholder="Search"
+            />
+            <p class="search mobile--noresults">No results found</p>
+          </form>
+        </div>
+        <!-- <div class="search--input-close"> -->
+        <!-- <img class="close--search" src="images/Vector (2).svg" alt="" /> -->
+
+        <!-- <div class="notes--menu">
+          <div class="notes--menu--main">
+            <img class="menu" src="images/Menu 1.svg" alt="menu-icon" />
+            <h2 class="header--title">Almdrasa-Notes</h2>
+            <img class="search--icon menu" src="images/Frame (1).svg" alt="" />
+          </div>
+          <div class="search--input-close">
+            <img class="close--search" src="images/Vector (2).svg" alt="" />
+            <form class="form--mobile">
+              <input
+                class="search--input--mobile"
+                type="text"
+                placeholder="Search"
+              />
+            </form>
+          </div>
+        </div> -->
+        <div class="pinned">
+          <!-- <p class="pinned--title >PINNED</p>
+          <div class="pinned--container data-index=index"">
+            <h2 class="pineed--heading">ght & Bright in Brooklyn</h2>
+            <p class="pinned--description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+              arcu dui.
+            </p>
+            <div class="date">
+              <p class="date--detail">Feb 8, 2021</p>
+              <p class="delete">Delete</p>
+            </div>
+          </div> -->
+        </div>
+        <!-- <div class="notes--menu"></div> -->
+        <div class="notes--all-notees"></div>
+        <button class="btn--notes"></button>
+      </header>
+      <main class="maiin main--inputs">
+        <div class="main-firstchild main--inputs">
+          <div class="notes--menu">
+            <img class="menu" src="images/Menu 1.svg" alt="menu-icon" />
+            <h2 class="header--title--mobile">Almdrasa-Notes</h2>
+            <img class="search--icon menu" src="images/Frame (1).svg" alt="" />
+          </div>
+          <div class="main--home"></div>
+        </div>
+
+        <div class="main--secodchild main--inputs">
+          <div class="notes--menu">
+            <img class="menu" src="images/Menu 1.svg" alt="menu-icon" />
+            <h2 class="header--title--mobile">Almdrasa-Notes</h2>
+            <img class="search--icon menu" src="images/Frame (1).svg" alt="" />
+          </div>
+          <section class="inputs">
+            <h2 class="form--heading">Add Note</h2>
+            <form class="form--input">
+              <div class="input">
+                <label class="label">Title*</label>
+                <input class="input--form title" type="text" />
+                <p class="warning warning--hide">You have to fill this</p>
+              </div>
+              <div class="input">
+                <label class="label">Author*</label>
+                <input class="input--form author" type="text" />
+                <p class="warning warning--hide">You have to fill this</p>
+              </div>
+              <div class="input">
+                <label class="label">Your Note*</label>
+                <textarea class="input--form textarea"></textarea>
+                <p class="warning warning--hide">You have to fill this</p>
+              </div>
+              <div class="btns">
+                <button class="btn--addnote">Add Note</button>
+                <button class="btn--pinned">Add Pinned Note</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <button class="btn"></button>
+    </div>
+  </body>
+  <script src="scripts/index.js"></script>
+</html>
